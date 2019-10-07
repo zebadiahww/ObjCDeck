@@ -14,6 +14,8 @@
 		8507DFA5234BA4E800A9F8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8507DFA4234BA4E800A9F8C6 /* Assets.xcassets */; };
 		8507DFA8234BA4E800A9F8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8507DFA6234BA4E800A9F8C6 /* LaunchScreen.storyboard */; };
 		8507DFAB234BA4E800A9F8C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFAA234BA4E800A9F8C6 /* main.m */; };
+		8507DFB6234BA53200A9F8C6 /* ZWWCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFB5234BA53200A9F8C6 /* ZWWCard.m */; };
+		8507DFB9234BA5BA00A9F8C6 /* ZWWCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFB8234BA5BA00A9F8C6 /* ZWWCardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		8507DFA7234BA4E800A9F8C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8507DFA9234BA4E800A9F8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8507DFAA234BA4E800A9F8C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8507DFB4234BA53200A9F8C6 /* ZWWCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWCard.h; sourceTree = "<group>"; };
+		8507DFB5234BA53200A9F8C6 /* ZWWCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWCard.m; sourceTree = "<group>"; };
+		8507DFB7234BA5BA00A9F8C6 /* ZWWCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWCardController.h; sourceTree = "<group>"; };
+		8507DFB8234BA5BA00A9F8C6 /* ZWWCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWCardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +67,47 @@
 		8507DF97234BA4E700A9F8C6 /* DeckObjC */ = {
 			isa = PBXGroup;
 			children = (
+				8507DFB3234BA50400A9F8C6 /* Controller */,
+				8507DFB2234BA50000A9F8C6 /* Model */,
+				8507DFB1234BA4F600A9F8C6 /* Resources */,
+				8507DF9E234BA4E700A9F8C6 /* ViewController.h */,
+				8507DF9F234BA4E700A9F8C6 /* ViewController.m */,
+				8507DFA1234BA4E700A9F8C6 /* Main.storyboard */,
+			);
+			path = DeckObjC;
+			sourceTree = "<group>";
+		};
+		8507DFB1234BA4F600A9F8C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8507DF98234BA4E700A9F8C6 /* AppDelegate.h */,
 				8507DF99234BA4E700A9F8C6 /* AppDelegate.m */,
 				8507DF9B234BA4E700A9F8C6 /* SceneDelegate.h */,
 				8507DF9C234BA4E700A9F8C6 /* SceneDelegate.m */,
-				8507DF9E234BA4E700A9F8C6 /* ViewController.h */,
-				8507DF9F234BA4E700A9F8C6 /* ViewController.m */,
-				8507DFA1234BA4E700A9F8C6 /* Main.storyboard */,
 				8507DFA4234BA4E800A9F8C6 /* Assets.xcassets */,
 				8507DFA6234BA4E800A9F8C6 /* LaunchScreen.storyboard */,
 				8507DFA9234BA4E800A9F8C6 /* Info.plist */,
 				8507DFAA234BA4E800A9F8C6 /* main.m */,
 			);
-			path = DeckObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8507DFB2234BA50000A9F8C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8507DFB4234BA53200A9F8C6 /* ZWWCard.h */,
+				8507DFB5234BA53200A9F8C6 /* ZWWCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8507DFB3234BA50400A9F8C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8507DFB7234BA5BA00A9F8C6 /* ZWWCardController.h */,
+				8507DFB8234BA5BA00A9F8C6 /* ZWWCardController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +136,7 @@
 		8507DF8D234BA4E700A9F8C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZWW;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Zebadiah Watson";
 				TargetAttributes = {
@@ -146,9 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8507DFB9234BA5BA00A9F8C6 /* ZWWCardController.m in Sources */,
 				8507DFA0234BA4E700A9F8C6 /* ViewController.m in Sources */,
 				8507DF9A234BA4E700A9F8C6 /* AppDelegate.m in Sources */,
 				8507DFAB234BA4E800A9F8C6 /* main.m in Sources */,
+				8507DFB6234BA53200A9F8C6 /* ZWWCard.m in Sources */,
 				8507DF9D234BA4E700A9F8C6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
