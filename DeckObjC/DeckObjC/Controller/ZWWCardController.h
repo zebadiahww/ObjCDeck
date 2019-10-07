@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "ZWWCard.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface ZWWCardController : NSObject
 
 + (ZWWCardController *)sharedController;
@@ -22,5 +20,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @end
-
-NS_ASSUME_NONNULL_END

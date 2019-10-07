@@ -16,6 +16,7 @@
 		8507DFAB234BA4E800A9F8C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFAA234BA4E800A9F8C6 /* main.m */; };
 		8507DFB6234BA53200A9F8C6 /* ZWWCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFB5234BA53200A9F8C6 /* ZWWCard.m */; };
 		8507DFB9234BA5BA00A9F8C6 /* ZWWCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8507DFB8234BA5BA00A9F8C6 /* ZWWCardController.m */; };
+		8549FCB3234BB9A40063E93C /* ZWWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8549FCB2234BB9A40063E93C /* ZWWViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		8507DFB5234BA53200A9F8C6 /* ZWWCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWCard.m; sourceTree = "<group>"; };
 		8507DFB7234BA5BA00A9F8C6 /* ZWWCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWCardController.h; sourceTree = "<group>"; };
 		8507DFB8234BA5BA00A9F8C6 /* ZWWCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWCardController.m; sourceTree = "<group>"; };
+		8549FCB1234BB9A40063E93C /* ZWWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWViewController.h; sourceTree = "<group>"; };
+		8549FCB2234BB9A40063E93C /* ZWWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8503FBF6234BB8A400774830 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8549FCB1234BB9A40063E93C /* ZWWViewController.h */,
+				8549FCB2234BB9A40063E93C /* ZWWViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		8507DF8C234BA4E700A9F8C6 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 		8507DF97234BA4E700A9F8C6 /* DeckObjC */ = {
 			isa = PBXGroup;
 			children = (
+				8503FBF6234BB8A400774830 /* View Controller */,
 				8507DFB3234BA50400A9F8C6 /* Controller */,
 				8507DFB2234BA50000A9F8C6 /* Model */,
 				8507DFB1234BA4F600A9F8C6 /* Resources */,
@@ -181,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8549FCB3234BB9A40063E93C /* ZWWViewController.m in Sources */,
 				8507DFB9234BA5BA00A9F8C6 /* ZWWCardController.m in Sources */,
 				8507DFA0234BA4E700A9F8C6 /* ViewController.m in Sources */,
 				8507DF9A234BA4E700A9F8C6 /* AppDelegate.m in Sources */,
@@ -328,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQHR9QPNK6;
-				INFOPLIST_FILE = DeckObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQHR9QPNK6;
-				INFOPLIST_FILE = DeckObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
